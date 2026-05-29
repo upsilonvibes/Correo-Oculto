@@ -1,0 +1,167 @@
+/* ==========================================================================
+   Base Clean Slate / Reinicialización de base
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Romantic pastel canvas gradient */
+    background: linear-gradient(135deg, #d088d3 0%, #f0f4ff 100%);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ==========================================================================
+   Ambient Floating Particles / Elementos flotantes de fondo
+   ========================================================================== */
+.floating-flower {
+    position: absolute;
+    font-size: 1.5rem;
+    opacity: 0.3;
+    animation: floatAnim 6s ease-in-out infinite;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Individual node settings instead of inline CSS configurations */
+#flower-top-left {
+    top: 10%;
+    left: 7%;
+}
+
+#flower-bottom-left {
+    top: 80%;
+    left: 10%;
+    animation-delay: 2s;
+}
+
+#flower-mid-right {
+    top: 20%;
+    left: 85%;
+    animation-delay: 4s;
+}
+
+@keyframes floatAnim {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(10deg); }
+}
+
+/* ==========================================================================
+   Letter Presentation Container / Estructura del pergamino digital
+   ========================================================================== */
+.letter-container {
+    background-color: rgba(252, 223, 223, 0.95);
+    width: 100%;
+    max-width: 520px;
+    padding: 40px 30px;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(230, 210, 210, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    position: relative;
+    backdrop-filter: blur(5px);
+}
+
+/* ==========================================================================
+   Headers and Metadata Meta / Encabezados y etiquetas descriptivas
+   ========================================================================== */
+.header-tags {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #a08484; /* Soft elegant rose gold color tint */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 12px;
+}
+
+.cc-tag {
+    font-size: 0.8rem;
+    color: #b3a2a2;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #fbcfe8, transparent);
+    margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   Letter Typography Body / Estilo y formato tipográfico del texto
+   ========================================================================== */
+.french-letter p {
+    color: #4a3e3e; /* Warm espresso tone instead of generic cold black */
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 22px;
+    text-align: justify;
+}
+
+/* Highlighting emphasis blocks for the embedded Spanish expressions */
+.french-letter em {
+    font-style: italic;
+    color: #db2777; /* Deep vivid rose focus accent color */
+    font-weight: 500;
+}
+
+/* Stealth anchor configuration pointing to the translation file */
+.secret-link {
+    color: #4a3e3e;
+    text-decoration: none;
+    cursor: default;
+    border-bottom: 1px dashed transparent;
+    transition: all 0.3s ease;
+}
+
+.secret-link:hover {
+    color: #db2777;
+    border-bottom: 1px dashed #db2777;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   Closing Footnotes / Firma y cierre de la página
+   ========================================================================== */
+.signature {
+    margin-top: 40px;
+    font-size: 1.1rem;
+    color: #4a3e3e;
+    text-align: right !important;
+}
+
+.signature strong {
+    font-size: 1.25rem;
+    color: #db2777;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-top: 5px;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+}
+
+/* ==========================================================================
+   Mobile Optimization Constraints / Ajustes responsivos para smartphones
+   ========================================================================== */
+@media (max-width: 480px) {
+    .letter-container {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+    .french-letter p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}

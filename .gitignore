@@ -1,0 +1,9 @@
+# Operating System Junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Code Editors & IDEs
+.vscode/
+.idea/
+*.suo
