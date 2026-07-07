@@ -1,6 +1,20 @@
 /* ==========================================================================
-   Base Clean Slate / Reinicialización de base
+   Design System Setup & Imports
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-rose: #db2777;
+    --primary-rose-hover: #be185d;
+    --espresso-text: #2d2424;     /* Darker for beautiful contrast & accessibility */
+    --rose-gold: #947a7a;         /* Soft, muted midtone */
+    --soft-border: rgba(255, 255, 255, 0.45);
+    --glass-bg: rgba(255, 255, 255, 0.82); /* Highly polished translucent glass */
+    
+    /* Animation Timing */
+    --spring-easing: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,160 +22,657 @@
 }
 
 body {
-    /* Romantic pastel canvas gradient */
-    background: linear-gradient(135deg, #d088d3 0%, #f0f4ff 100%);
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    /* High-end ambient mesh background using layered glowing gradients */
+    background-color: #f3f4f6;
+    background-image: 
+        radial-gradient(at 10% 20%, rgba(245, 109, 186, 0.6) 0px, transparent 50%),
+        radial-gradient(at 90% 10%, rgba(94, 138, 196, 0.7) 0px, transparent 50%),
+        radial-gradient(at 10% 90%, rgba(106, 23, 194, 0.6) 0px, transparent 50%),
+        radial-gradient(at 80% 90%, rgba(226, 32, 18, 0.5) 0px, transparent 50%);
+    
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
-    overflow-x: hidden;
+    padding: 24px;
+    overflow-y: auto;
     position: relative;
 }
 
 /* ==========================================================================
-   Ambient Floating Particles / Elementos flotantes de fondo
+   Ambient Floating System (Subtle & Elegant)
    ========================================================================== */
-.floating-flower {
+.floating-particle {
     position: absolute;
     font-size: 1.5rem;
-    opacity: 0.3;
-    animation: floatAnim 6s ease-in-out infinite;
+    opacity: 0.22; /* Softened so it sits purely in the background */
+    animation: floatAnim 8s ease-in-out infinite;
     user-select: none;
     pointer-events: none;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.02));
 }
 
-/* Individual node settings instead of inline CSS configurations */
-#flower-top-left {
-    top: 10%;
-    left: 7%;
-}
-
-#flower-bottom-left {
-    top: 80%;
-    left: 10%;
-    animation-delay: 2s;
-}
-
-#flower-mid-right {
-    top: 20%;
-    left: 85%;
-    animation-delay: 4s;
-}
+#p1 { top: 12%; left: 8%; animation-duration: 9s; }
+#p2 { top: 78%; left: 12%; animation-duration: 11s; animation-delay: 1s; }
+#p3 { top: 22%; left: 86%; animation-duration: 10s; animation-delay: 1.5s; }
+#p4 { top: 10%; left: 76%; font-size: 1.2rem; animation-duration: 8s; animation-delay: 2.5s; }
+#p5 { top: 82%; left: 82%; font-size: 1.4rem; animation-duration: 12s; animation-delay: 0.5s; }
+#p6 { top: 48%; left: 6%; font-size: 1.1rem; animation-duration: 9s; animation-delay: 3s; }
 
 @keyframes floatAnim {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-15px) rotate(10deg); }
+    0%, 100% { transform: translateY(0) translateX(0) rotate(0deg); }
+    50% { transform: translateY(-15px) translateX(8px) rotate(8deg); }
 }
 
 /* ==========================================================================
-   Letter Presentation Container / Estructura del pergamino digital
+   Unified Glassmorphism Card System
    ========================================================================== */
-.letter-container {
-    background-color: rgba(252, 223, 223, 0.95);
+.card-container {
+    background: var(--glass-bg);
     width: 100%;
-    max-width: 520px;
-    padding: 40px 30px;
+    max-width: 440px; /* Snugger layout specifically optimized for inputs */
+    padding: 45px 40px;
     border-radius: 24px;
-    box-shadow: 0 15px 35px rgba(230, 210, 210, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid var(--soft-border);
+    backdrop-filter: blur(16px) saturate(120%);
+    -webkit-backdrop-filter: blur(16px) saturate(120%);
+    
+    /* Clean physical elevation shadows */
+    box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.03),
+        0 20px 50px rgba(219, 39, 119, 0.08);
+        
+    transition: 
+        transform 0.5s var(--spring-easing), 
+        opacity 0.4s ease, 
+        box-shadow 0.4s ease;
     position: relative;
-    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.card-container:hover {
+    box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.03),
+        0 30px 60px rgba(219, 39, 119, 0.12);
+}
+
+.hidden {
+    display: none !important;
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
 }
 
 /* ==========================================================================
-   Headers and Metadata Meta / Encabezados y etiquetas descriptivas
+   Landing Gate Interface Details
    ========================================================================== */
+.landing-title {
+    color: var(--espresso-text);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.landing-subtitle {
+    color: var(--rose-gold);
+    font-size: 0.92rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 38px;
+    line-height: 1.50;
+    padding: 0 10px;
+}
+
+/* Floating Label Interactive Input Groups */
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--espresso-text);
+    border: none;
+    border-bottom: 1.5px solid rgba(148, 122, 122, 0.3);
+    background: transparent;
+    outline: none;
+    transition: border-color 0.25s ease;
+}
+
+.input-group label {
+    position: absolute;
+    top: 12px;
+    left: 4px;
+    font-size: 1rem;
+    color: var(--rose-gold);
+    pointer-events: none;
+    transition: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1) all;
+}
+
+/* Perfecting floating states */
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -14px;
+    left: 2px;
+    font-size: 0.82rem;
+    color: var(--primary-rose);
+    font-weight: 700;
+}
+
+.input-group input:focus {
+    border-bottom: 1.5px solid var(--primary-rose);
+}
+
+/* Buttons and Dynamic Alerts */
+.unlock-btn {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-rose);
+    color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(219, 39, 119, 0.25);
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.unlock-btn:hover {
+    background: var(--primary-rose-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(219, 39, 119, 0.35);
+}
+
+.unlock-btn:active {
+    transform: translateY(1px);
+}
+
+.error-message {
+    color: #e11d48;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-bottom: 18px;
+    min-height: 18px;
+    font-weight: 600;
+}
+
+/* Enhanced Feedback Shake */
+.shake {
+    animation: shakeAnim 0.35s ease-in-out;
+}
+
+@keyframes shakeAnim {
+    0%, 100% { transform: translateX(0); }
+    15%, 45%, 75% { transform: translateX(-6px); }
+    30%, 60%, 90% { transform: translateX(6px); }
+}
+
+/* ==========================================================================
+   PHASE 2: Timeline Selection View Design
+   ========================================================================== */
+#selection-card {
+    max-width: 480px;
+    padding: 45px 30px;
+}
+
+.timeline-title {
+    color: var(--espresso-text);
+    font-size: 1.65rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 6px;
+    letter-spacing: -0.3px;
+}
+
+.timeline-subtitle {
+    color: var(--rose-gold);
+    font-size: 0.88rem;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* Timeline List Container */
+.timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 380px; /* Limits size and gracefully allows scrolling if you have 10+ letters */
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+/* Custom Scrollbar for a luxurious feel */
+.timeline-list::-webkit-scrollbar {
+    width: 4px;
+}
+.timeline-list::-webkit-scrollbar-thumb {
+    background: rgba(219, 39, 119, 0.2);
+    border-radius: 10px;
+}
+
+/* Individual Interactive Letter Row Item */
+.timeline-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s var(--spring-easing), background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+    background: #ffffff;
+    border-color: rgba(219, 39, 119, 0.25);
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 10px 20px rgba(219, 39, 119, 0.05);
+}
+/* Subtle decorative accent line mimicry for unread letters */
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #fbcfe8, #db2777, #fbcfe8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.timeline-item:hover::after {
+    opacity: 1;
+}
+
+/* Envelope item action click state */
+.envelope-opening {
+    animation: openFlapAnim 0.4s var(--spring-easing) forwards;
+}
+
+@keyframes openFlapAnim {
+    0% { transform: scale(1); background: #ffffff; }
+    50% { transform: scale(0.98) translateY(2px); background: #fdf2f8; }
+    100% { transform: scale(0.95) translateY(-8px); opacity: 0; }
+}
+
+/* Left-Side Meta Info block */
+.item-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.item-date {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-rose);
+    letter-spacing: 1px;
+}
+
+.item-title {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--espresso-text);
+}
+
+/* Universal Envelope/Read Status Badge Styling */
+.item-badge {
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+/* Unopened Variant State */
+.badge-new {
+    background: #fce7f3;
+    color: var(--primary-rose);
+}
+
+/* Opened Variant State */
+.badge-opened {
+    background: #f3f4f6;
+    color: #6b7280;
+}
+
+/* Add this to your styles.css file */
+.mailbox-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 12px;
+}
+
+.mailbox-header .timeline-title {
+    margin-bottom: 0; /* Clear bottom margin to balance the flex row */
+    text-align: left;
+}
+
+.logout-btn {
+    background: rgba(219, 39, 119, 0.1);
+    color: var(--primary-rose);
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.logout-btn:hover {
+    background: rgba(219, 39, 119, 0.18);
+    transform: translateY(-1px);
+}
+
+.logout-btn:active {
+    transform: translateY(1px);
+}
+
+
+
+/* ==========================================================================
+   PHASE 3: Immersive Letter Reading Room Design
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap');
+
+#letter-card {
+    background: linear-gradient(145deg, #fffdfa 70%, #fdf2f8 100%);
+    max-width: 580px; /* Wider canvas for comfortable, immersive reading */
+    padding: 55px 45px;
+    border-radius: 32px;
+    border: 1px solid rgba(219, 39, 119, 0.12);
+    
+    /* Luxury paper depth shadow lines */
+    box-shadow: 
+        0 30px 70px rgba(219, 39, 119, 0.12),
+        inset 0 0 40px rgba(254, 242, 242, 0.7);
+        
+    position: relative;
+}
+
+/* Elegant Floating Back Anchor Button */
+.back-btn {
+    background: rgba(219, 39, 119, 0.05);
+    border: 1px solid rgba(219, 39, 119, 0.08);
+    color: var(--primary-rose);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 35px;
+    transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-btn:hover {
+    background: var(--primary-rose);
+    color: #ffffff;
+    transform: translateX(-2px);
+}
+
+/* Micro Envelope Seal Ribbon Overlay Accent */
+#letter-card::before {
+    content: "🌸";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    background: #fffdfa;
+    padding: 0 12px;
+    border-radius: 50%;
+    filter: drop-shadow(0 4px 8px rgba(219, 39, 119, 0.15));
+}
+
+/* Header Meta Elements */
 .header-tags {
     display: flex;
     justify-content: space-between;
-    font-size: 0.85rem;
-    color: #a08484; /* Soft elegant rose gold color tint */
+    font-size: 0.78rem;
+    color: var(--rose-gold);
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
-    margin-bottom: 12px;
+    letter-spacing: 1.8px;
+    margin-bottom: 10px;
 }
 
 .cc-tag {
     font-size: 0.8rem;
-    color: #b3a2a2;
-    margin-top: -5px;
-    margin-bottom: 20px;
+    color: var(--rose-gold);
+    margin-top: -4px;
+    margin-bottom: 24px;
     font-style: italic;
+    opacity: 0.85;
 }
 
-hr {
+/* Floral Line Divider Gradient */
+.divider {
     border: 0;
     height: 1px;
-    background: linear-gradient(to right, transparent, #fbcfe8, transparent);
-    margin-bottom: 30px;
+    background: linear-gradient(to right, transparent, rgba(219, 39, 119, 0.25), transparent);
+    margin-bottom: 35px;
 }
 
-/* ==========================================================================
-   Letter Typography Body / Estilo y formato tipográfico del texto
-   ========================================================================== */
-.french-letter p {
-    color: #4a3e3e; /* Warm espresso tone instead of generic cold black */
-    font-size: 1.05rem;
-    line-height: 1.8;
-    margin-bottom: 22px;
+/* High-End Literary Typography for Letter Body */
+.letter-body p {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--espresso-text);
+    font-size: 1.12rem; /* Slightly larger storybook font size */
+    line-height: 1.95;  /* Breathable spacing for long paragraphs */
+    margin-bottom: 28px;
     text-align: justify;
+    letter-spacing: 0.1px;
 }
 
-/* Highlighting emphasis blocks for the embedded Spanish expressions */
-.french-letter em {
+/* Highlighting Multi-Lingual Emphasis Passages (French/Spanish details) */
+.letter-body em {
+    font-family: 'Playfair Display', Georgia, serif;
     font-style: italic;
-    color: #db2777; /* Deep vivid rose focus accent color */
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--primary-rose);
+    background: linear-gradient(120deg, rgba(252, 231, 243, 0.4) 0%, rgba(252, 231, 243, 0.1) 100%);
+    padding: 2px 4px;
+    border-radius: 4px;
 }
 
-/* Stealth anchor configuration pointing to the translation file */
-.secret-link {
-    color: #4a3e3e;
-    text-decoration: none;
-    cursor: default;
-    border-bottom: 1px dashed transparent;
-    transition: all 0.3s ease;
-}
-
-.secret-link:hover {
-    color: #db2777;
-    border-bottom: 1px dashed #db2777;
-    cursor: pointer;
-}
-
-/* ==========================================================================
-   Closing Footnotes / Firma y cierre de la página
-   ========================================================================== */
+/* Elegant Signature Script Alignment */
 .signature {
-    margin-top: 40px;
-    font-size: 1.1rem;
-    color: #4a3e3e;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 1.08rem;
+    margin-top: 55px;
+    border-top: 1px dashed rgba(219, 39, 119, 0.12);
+    padding-top: 24px;
+    line-height: 1.7;
     text-align: right !important;
 }
 
 .signature strong {
-    font-size: 1.25rem;
-    color: #db2777;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.15rem;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--primary-rose);
     display: inline-block;
-    margin-top: 5px;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+    margin-top: 6px;
+}
+
+/* Media/Music Placeholder Frame */
+#media-attachment-box {
+    margin-bottom: 30px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px dashed rgba(219, 39, 119, 0.15);
+    transition: border-color 0.3s ease;
+}
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Clean twin column layout */
+    gap: 20px;
+    margin: 30px 0;
+    padding: 10px 0;
+}
+
+/* Individual Polaroid Styling Elements */
+.polaroid-card {
+    background: #ffffff;
+    padding: 12px 12px 24px 12px;
+    border-radius: 4px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover; /* Keeps image ratios clean without squishing */
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Fun physical polaroid rotation offsets to make them look scattered naturally */
+.polaroid-card:nth-child(odd) {
+    transform: rotate(-3deg);
+}
+.polaroid-card:nth-child(even) {
+    transform: rotate(3deg);
+}
+
+.polaroid-card:hover {
+    transform: rotate(0deg) scale(1.04);
+    box-shadow: 0 15px 30px rgba(219, 39, 119, 0.12);
+    z-index: 5;
+}
+
+
+
+/* Widescreen Media Framework */
+.video-responsive-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Perfect cinematic 16:9 Aspect Ratio */
+}
+
+.video-responsive-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Compact layout framework for the iframe track adjustments */
+.spotify-frame-style {
+    border-radius: 12px;
+    display: block;
+}
+
+/* WhatsApp Interactive Reply Button Framework */
+.reply-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 20px 0;
+}
+
+.whatsapp-reply-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25d366; /* Elegant authentic WhatsApp green */
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25);
+    transition: transform 0.2s var(--spring-easing), box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.whatsapp-reply-btn:hover {
+    background: #20ba5a;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 26px rgba(37, 211, 102, 0.35);
+}
+
+.whatsapp-reply-btn:active {
+    transform: translateY(1px);
 }
 
 /* ==========================================================================
-   Mobile Optimization Constraints / Ajustes responsivos para smartphones
+   Mobile Configurations
    ========================================================================== */
 @media (max-width: 480px) {
-    .letter-container {
-        padding: 30px 20px;
-        border-radius: 20px;
+    body {
+        padding: 16px;
     }
-    .french-letter p {
-        font-size: 1rem;
-        line-height: 1.7;
+    .card-container { 
+        padding: 35px 24px; 
+        border-radius: 20px; 
+    }
+    .landing-title {
+        font-size: 1.75rem;
+    }
+    #letter-card {
+        padding: 45px 24px 35px 24px;
+        border-radius: 24px;
+    }
+    .letter-body p {
+        font-size: 1.04rem;
+        line-height: 1.85;
+        text-align: left; /* Better flow on narrow screens */
+    }
+    .header-tags {
+        flex-direction: column;
+        gap: 6px;
+    }
+   .memory-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .polaroid-card img {
+        height: 200px;
     }
 }
+
+@media (max-width: 400px) {
+    .mailbox-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mailbox-header .timeline-title {
+        text-align: center;
+    }
+}
+

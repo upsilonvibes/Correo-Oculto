@@ -1,25 +1,26 @@
-# Correo-Oculto
+# 💌 Correo-Oculto
 
-A simple, responsive frontend web layout designed to practice multi-lingual string formatting, semantic HTML structuring, and CSS ambient background animations.
+A dynamic, mobile-responsive frontend architecture designed to deliver personalized, client-side routed digital letters using a single deployment link. 🚀
 
-## 🚀 Overview
+## 📋 Overview
 
-This repository hosts a personal frontend template utilized for formatting and presenting multi-lingual educational notes (combining structural prose with specific foreign vocabulary). The architecture features a dual-file layout linked together seamlessly via implicit anchor mappings.
+`correo-oculto` (Hidden Mail) is a flexible frontend template engineered to render unique text content dynamically based on URL query parameters. Instead of deploying separate pages for different recipients, this architecture utilizes client-side JavaScript to parse parameters and seamlessly swap targeted prose inside a unified UI layout. 🎯
 
-### Tech Stack Included:
-* **HTML5:** Structured semantics for localized presentation.
-* **CSS3:** Custom linear gradients, keyframe layout transitions, and mobile-first fluid media queries.
-* **Vercel:** Optimized edge delivery pipeline for static digital content assets.
+### 🛠️ Key Technical Features:
+* **Dynamic Content Injection:** Employs `URLSearchParams` to read browser tokens and handle individual routing completely on the client side. 🧩
+* **Ambient UI Experience:** Features CSS3 keyframe animations for floating background elements and a polished glassmorphism interface. 🌸✨
+* **Responsive Typography:** Optimized using mobile-first media queries to guarantee flawless text legibility across all screen dimensions. 📱💻
+* **Flexible Content Structuring:** Supports standard text configurations, varying language formats, or straightforward localized prose based on user configuration. 📝
 
-## 🛠️ Design Architecture
+## 📐 Design Architecture
 
-* `index.html`: Contains the core structural text container rendering localized typography elements.
-* `translation.html`: An identical replica card layout mapping structural translation nodes.
-* `style.css`: The shared global style module controlling responsive fluid constraints, deep-tone font selections, and floating layout particles.
+* 📄 `index.html` — The main structural anchor. Houses the container blueprint and mounts the core UI layout.
+* 🎨 `styles.css` — The universal design system. Coordinates smooth background gradients, fluid font sizing, espresso-toned typography, and animated vector particles.
+* ⚡ `router.js` *(Upcoming)* — The configuration engine holding content objects and executing the dynamic parameter lookup.
 
-## 📦 Deployment pipeline
+## 📦 Deployment & Pipeline
 
-The repository utilizes continuous integration via Vercel to compile and deliver the presentation layout on production branches instantly. 
+The project is structured for immediate static deployment via edge routing platforms (such as Vercel or GitHub Pages), ensuring instant content delivery upon continuous integration pushes. 🌐
 
 ---
-*Developed as part of a multi-language frontend configuration experiment during software engineering training.*
+*Developed as a personalized frontend interface and routing architecture experiment. Paso a paso. 💻🌿*
