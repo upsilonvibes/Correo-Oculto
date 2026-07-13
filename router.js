@@ -109,7 +109,34 @@ const vaultMatrix = {
                 } 
             ]
         }
-    }
+    },
+
+    emmah: {
+        "EMM-1107": {
+            recipient: "Para: Emmah 🕊️",
+            cc: "CC: Late Night Whispers, Unfiltered Chemistry & Endless Horizons 🍷✨", 
+            letters: [
+                {
+                    id: "emmah-vol1",
+                    date: "Jul 13, 2026",
+                    title: "Midnight Alchemy & The Unbroken Connection 🕯️✨", 
+                    content: `
+        <p>Holaa, Emmah... 🥀 I wanted to carve out this quiet, intimate sanctuary just for us—an effortless escape where we can strip away the digital noise and let our deepest thoughts speak freely. 🥂</p>
+        
+        <p>First and foremost, mi cariño, let this custom space be living proof that coding is second nature when inspired by someone as captivating as you... ✨ You see? When you trust your own magic, everything simply streamlines into elegance. 💅✨</p>
+        
+        <p>Take a slow breath and pour yourself into this moment as you read. Let the melody above set the rhythm for us... 🕯️🎶 Ever since you glided into my DMs on the 11th, I’ve been living in a subtle, intoxicating haze. You became the very first girl to hold my complete focus in an unbroken, day-long conversation—and honestly, every single exchange felt like pure, effortless chemistry. ⚡🔥</p>
+        
+        <p>I find myself utterly addicted to your energy, your razor-sharp wit, and the magnetic charm you bring to the table... You are, quite simply, unforgettable. 🌹 I want us to stay locked in this rhythm—letting this spark grow through these campus years and carry us far into the world beyond. 🏛️✨</p>
+        
+        <p><em>Muchas gracias, mi amor</em>, for stepping into my universe and turning up the heat. 🕊️💋</p>
+        
+        <p class="signature">Forever yours,<br><br><strong>Upsilon Vibes</strong></p>
+    `,
+                } 
+            ]
+        }
+    },
 };
 
 // Global state references
@@ -263,7 +290,7 @@ function readLetter(originalIndex) {
         replyBox.className = "reply-container"; 
         
         // Construct an elegant pre-filled text template automatically
-        const baseMessage = `Hola Upsilon! I just finished reading "${targetLetter.title}" inside the secure mailbox... 🕊️✨`;
+        const baseMessage = `Hola Upsilon! I just finished reading "${targetLetter.title}" inside the secure mailbox... `;
         
         // URL-encode the string safely so spaces and emojis transfer perfectly to the app
         const encodedMessage = encodeURIComponent(baseMessage);
