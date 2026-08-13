@@ -45,7 +45,7 @@ const vaultMatrix = {
             letters: [
                 {
                     id: "mercy-vol1",
-                    date: "Aug 1, 2026",
+                    date: "Aug 13, 2026",
                     title: "Un Disque Rayé & Les Confessions d'Avril 💿🧩",
                     content: `
         <p>Bonjour, Mercy... 👋 I hope you are doing incredibly well and resting up after the school term.</p>
@@ -81,7 +81,7 @@ const vaultMatrix = {
             letters: [
                 {
                     id: "fridah-vol1",
-                    date: "Aug 1, 2026",
+                    date: "Aug 13, 2026",
                     title: "Un Secret Volé & Les Interrogations d'Avril 📝🔍", 
                     content: `
         <p>Hello Fridah... 👋 Just wanted to create a quiet, intentional moment to check in and see how your holiday is sliding along. I hope the 4 weeks after our short meet-up during the music festivals have been absolutely marvelous and fruitful. I am doing incredibly fine on my end! 💻✨</p>
