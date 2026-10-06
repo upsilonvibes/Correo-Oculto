@@ -135,6 +135,28 @@ const vaultMatrix = {
     `,
                 } 
             ]
+            [
+            {
+                id: "emmah-vol2",
+                date: "Oct 6, 2026",
+                title: "A Little Feedback From My Favorite Reviewer 👀🕊️",
+                content: `
+        <p>Holaa, Emmah... 🥀✨ I have a little request for you, and I figured who better to ask than the girl who somehow inspired half the creativity behind this little corner of the internet? 👀</p>
+
+        <p>So... I want your <em>honest</em> opinion on the app. Not the polite "it's nice" answer either 😂 I mean everything — what you love, what you don't, what feels unnecessary, what could be changed, what could be added, and anything that would make the whole experience feel even better. ✨</p>
+
+        <p>If you were given the keys to this place for a day, what would you change first? 👀 Would you add something? Remove something? Change the design? Add another little feature? Or maybe there's something about it that made you think, "Percy... what were you doing here?" 😂</p>
+
+        <p>Seriously though, don't hold back. I actually want your perspective because you're not just some random person I'm asking to test an app... you're <em>you</em>. And somehow, that makes your opinion matter just a little more than it probably should. 🕊️</p>
+
+        <p>So, Miss Emmah... take your time, explore everything, and tell me what you think. I'll be listening. 👀✨</p>
+
+        <p>And if your suggestions make the app even better, I'll have to give you some credit in the update notes... although I'm not sure "beautiful girl with dangerously good taste" is a very professional contributor title. 😌😂</p>
+
+        <p class="signature">Awaiting the verdict... 🕯️<br><br><strong>Upsilon Vibes</strong></p>
+    `,
+            }
+        ]
         }
     },
 };
