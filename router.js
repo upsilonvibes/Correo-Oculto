@@ -2,23 +2,24 @@
 // Central Secured Mailbox Library Matrix
 // ==========================================================================
 const vaultMatrix = {
-    nicole: {
-        "NIX-9482": {
-            recipient: "Para: Nicole 🕊️",
-            cc: "CC: Special Moments, Lifelong Chapters & Infinite Joy ⏳💝",
-            letters: [
-                {
-                    id: "nicole-vol1",
-                    date: "July 7, 2026",
-                    title: "15:09 & The Sticky Note Chapters 📝✨",
-                    youtubeId: "GhQxrCrVSyw",
-                    /*youtubeId: "dQw4w9WgXcQ",*/
-                    /*spotifyUri: "track/7ouMYWpwJ422jRcDASZB7P",*/
-                   /* images: [
+  nicole: {
+    "NIX-9482": {
+      recipient: "Para: Nicole 🕊️",
+      cc: "CC: Special Moments, Lifelong Chapters & Infinite Joy ⏳💝",
+      letters: [
+        {
+          id: "nicole-vol1",
+          date: "July 7, 2026",
+          number: 1,
+          title: "15:09 & The Sticky Note Chapters 📝✨",
+          youtubeId: "GhQxrCrVSyw",
+          /*youtubeId: "dQw4w9WgXcQ",*/
+          /*spotifyUri: "track/7ouMYWpwJ422jRcDASZB7P",*/
+          /* images: [
         "images/memory1.jpg",
         "images/memory2.jpg"
     ],*/
-                    content: `
+          content: `
                         <p>Hello Nicole... 👋 I wanted to leave something completely unique here for you to discover. Setting up this little space felt like the perfect way to share thoughts without the noise of everyday notifications. 🌌</p>
         
         <p>Anyway, I want you to experience what you must have missed in high school — sticky notes from your crush — yeah... I am damn serious about that. 🤭📝 I want you to feel extremely, effortlessly loved every single day.</p>
@@ -31,23 +32,21 @@ const vaultMatrix = {
         
         <p class="signature">Warmly,<br><br><strong>Upsilon Vibes</strong></p>
         `,
-                    
-                }
-                
-            ]
-            
-        }
+        },
+      ],
     },
-    mercy: {
-        "MER-7139": {
-            recipient: "Para: Mercy 🕊️",
-            cc: "CC: Shared Melodies, Creative Spaces & Genuine Connections 🧩✨", 
-            letters: [
-                {
-                    id: "mercy-vol1",
-                    date: "Aug 13, 2026",
-                    title: "Un Disque Rayé & Les Confessions d'Avril 💿🧩",
-                    content: `
+  },
+  mercy: {
+    "MER-7139": {
+      recipient: "Para: Mercy 🕊️",
+      cc: "CC: Shared Melodies, Creative Spaces & Genuine Connections 🧩✨",
+      letters: [
+        {
+          id: "mercy-vol1",
+          date: "Aug 13, 2026",
+          number: 1,
+          title: "Un Disque Rayé & Les Confessions d'Avril 💿🧩",
+          content: `
         <p>Bonjour, Mercy... 👋 I hope you are doing incredibly well and resting up after the school term.</p>
         
         <p>En toute franchise—to be completely honest—I think it's time I come clean about something that has been weighing on my mind. 🔍 I was actually supposed to tell you this during the regional Music Festivals, but due to a total breakdown of time constraints (<em>faute de temps</em>), I couldn't deliver the message. Moreover, mon amie, I simply couldn't imagine looking at your face during the turn of events. 🫣🎭</p>
@@ -70,20 +69,21 @@ const vaultMatrix = {
         
         <p class="signature">Warmly,<br><br><strong>Upsilon Vibes</strong></p>
     `,
-                } 
-            ]
-        }
+        },
+      ],
     },
-    fridah: {
-        "FRI-5521": {
-            recipient: "Para: Fridah 🕊️",
-            cc: "CC: Bright Perspectives, Great Conversations & Daily Walks 🧩✨", 
-            letters: [
-                {
-                    id: "fridah-vol1",
-                    date: "Aug 13, 2026",
-                    title: "Un Secret Volé & Les Interrogations d'Avril 📝🔍", 
-                    content: `
+  },
+  fridah: {
+    "FRI-5521": {
+      recipient: "Para: Fridah 🕊️",
+      cc: "CC: Bright Perspectives, Great Conversations & Daily Walks 🧩✨",
+      letters: [
+        {
+          id: "fridah-vol1",
+          date: "Aug 13, 2026",
+          number: 1,
+          title: "Un Secret Volé & Les Interrogations d'Avril 📝🔍",
+          content: `
         <p>Hello Fridah... 👋 Just wanted to create a quiet, intentional moment to check in and see how your holiday is sliding along. I hope the 4 weeks after our short meet-up during the music festivals have been absolutely marvelous and fruitful. I am doing incredibly fine on my end! 💻✨</p>
         
         <p>Well, amidst the bittersweet joy—and definitely the underlying sorrow—of finally closing the high school chapter, *c'est la vie*! I remembered something crucial that I absolutely ought to tell you before our paths diverge and things really go haywire. 🌪️</p>
@@ -106,21 +106,22 @@ const vaultMatrix = {
         
         <p class="signature">Cheers to the next chapter,<br><br><strong>Upsilon Vibes</strong></p>
     `,
-                } 
-            ]
-        }
+        },
+      ],
     },
+  },
 
-    emmah: {
-        "EMM-1107": {
-            recipient: "Para: Emmah 🕊️",
-            cc: "CC: Late Night Whispers, Unfiltered Chemistry & Endless Horizons 🍷✨", 
-            letters: [
-                {
-                    id: "emmah-vol1",
-                    date: "Jul 13, 2026",
-                    title: "Midnight Alchemy & The Unbroken Connection 🕯️✨", 
-                    content: `
+  emmah: {
+    "EMM-1107": {
+      recipient: "Para: Emmah 🕊️",
+      cc: "CC: Late Night Whispers, Unfiltered Chemistry & Endless Horizons 🍷✨",
+      letters: [
+        {
+          id: "emmah-vol1",
+          date: "Jul 13, 2026",
+          number: 1,
+          title: "Midnight Alchemy & The Unbroken Connection 🕯️✨",
+          content: `
         <p>Holaa, Emmah... 🥀 I wanted to carve out this quiet, intimate sanctuary just for us—an effortless escape where we can strip away the digital noise and let our deepest thoughts speak freely. 🥂</p>
         
         <p>First and foremost, mi cariño, let this custom space be living proof that coding is second nature when inspired by someone as captivating as you... ✨ You see? When you trust your own magic, everything simply streamlines into elegance. 💅✨</p>
@@ -133,14 +134,14 @@ const vaultMatrix = {
         
         <p class="signature">Forever yours,<br><br><strong>Upsilon Vibes</strong></p>
     `,
-                } 
-            ]
-            [
-            {
-                id: "emmah-vol2",
-                date: "Oct 6, 2026",
-                title: "A Little Feedback From My Favorite Reviewer 👀🕊️",
-                content: `
+        },
+      
+        {
+          id: "emmah-vol2",
+          date: "Oct 6, 2026",
+          number: 2,
+          title: "A Little Feedback From My Favorite Reviewer 👀🕊️",
+          content: `
         <p>Holaa, Emmah... 🥀✨ I have a little request for you, and I figured who better to ask than the girl who somehow inspired half the creativity behind this little corner of the internet? 👀</p>
 
         <p>So... I want your <em>honest</em> opinion on the app. Not the polite "it's nice" answer either 😂 I mean everything — what you love, what you don't, what feels unnecessary, what could be changed, what could be added, and anything that would make the whole experience feel even better. ✨</p>
@@ -155,10 +156,10 @@ const vaultMatrix = {
 
         <p class="signature">Awaiting the verdict... 🕯️<br><br><strong>Upsilon Vibes</strong></p>
     `,
-            }
-        ]
         }
+      ],
     },
+  },
 };
 
 // Global state references
@@ -169,207 +170,221 @@ let selectedRecipientInfo = {};
 // Authentication & Vault Decryption Flow
 // ==========================================================================
 function unlockVault(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    const nameInput = document.getElementById('recipient-name').value.trim().toLowerCase();
-    const keyInput = document.getElementById('secret-key').value.trim().toUpperCase(); 
-    const errorNode = document.getElementById('gate-error');
-    const gateCard = document.getElementById('gatekeeper-card');
-    const btnNode = document.getElementById('submit-btn');
+  const nameInput = document
+    .getElementById("recipient-name")
+    .value.trim()
+    .toLowerCase();
+  const keyInput = document
+    .getElementById("secret-key")
+    .value.trim()
+    .toUpperCase();
+  const errorNode = document.getElementById("gate-error");
+  const gateCard = document.getElementById("gatekeeper-card");
+  const btnNode = document.getElementById("submit-btn");
 
-    if (vaultMatrix[nameInput] && vaultMatrix[nameInput][keyInput]) {
-        errorNode.innerText = "";
-        btnNode.innerText = "Opening Envelope... ✨";
+  if (vaultMatrix[nameInput] && vaultMatrix[nameInput][keyInput]) {
+    errorNode.innerText = "";
+    btnNode.innerText = "Opening Envelope... ✨";
 
-        selectedRecipientInfo = vaultMatrix[nameInput][keyInput];
-        
-        // Map the entries with their original index positions preserved before sorting
-        activeUserLetters = selectedRecipientInfo.letters.map((letter, index) => ({
-            ...letter,
-            originalIndex: index
-        }));
+    selectedRecipientInfo = vaultMatrix[nameInput][keyInput];
 
-        // Reverse order so the newest volume (last added to the array) is displayed at the very top
-        activeUserLetters.reverse();
+    // Map the entries with their original index positions preserved before sorting
+    activeUserLetters = selectedRecipientInfo.letters.map((letter, index) => ({
+      ...letter,
+      originalIndex: index,
+    }));
 
-        gateCard.classList.add('fade-out');
+    // Reverse order so the newest volume (last added to the array) is displayed at the very top
+    activeUserLetters.reverse();
 
-        setTimeout(() => {
-            gateCard.classList.add('hidden');
-            gateCard.classList.remove('fade-out'); 
-            renderTimeline(); 
-        }, 400);
+    gateCard.classList.add("fade-out");
 
-    } else {
-        errorNode.innerText = "No letter found. Please check the name or key code.";
-        gateCard.classList.add('shake');
-        setTimeout(() => gateCard.classList.remove('shake'), 400);
-    }
+    setTimeout(() => {
+      gateCard.classList.add("hidden");
+      gateCard.classList.remove("fade-out");
+      renderTimeline();
+    }, 400);
+  } else {
+    errorNode.innerText = "No letter found. Please check the name or key code.";
+    gateCard.classList.add("shake");
+    setTimeout(() => gateCard.classList.remove("shake"), 400);
+  }
 }
 
 // ==========================================================================
 // Render Timeline List Selection Engine
 // ==========================================================================
 function renderTimeline() {
-    const timelineCard = document.getElementById('selection-card');
-    const listContainer = document.getElementById('timeline-list');
-    
-    listContainer.innerHTML = ""; 
+  const timelineCard = document.getElementById("selection-card");
+  const listContainer = document.getElementById("timeline-list");
 
-    if (activeUserLetters.length === 0) {
-        listContainer.innerHTML = `<p class="timeline-subtitle" style="text-align:center; padding-top:20px;">Your timeline is currently peaceful and empty. Check back soon! 🕊️</p>`;
-    } else {
-        activeUserLetters.forEach((letter) => {
-            const item = document.createElement('div');
-            item.className = "timeline-item";
-            
-            // Trigger animation class first, then pass control to readLetter after delay
-            item.onclick = function() {
-                item.classList.add('envelope-opening');
-                setTimeout(() => {
-                    readLetter(letter.originalIndex);
-                }, 380); // Perfectly timed with the CSS openFlapAnim duration
-            };
+  listContainer.innerHTML = "";
 
-            const isOpened = localStorage.getItem(letter.id) === "true";
-            const badgeClass = isOpened ? "badge-opened" : "badge-new";
-            const badgeText = isOpened ? "Opened 📖" : "New ✉️";
+  const subtitle = document.getElementById("mailbox-subtitle");
 
-            item.innerHTML = `
-                <div class="item-meta">
-                    <span class="item-date">${letter.date}</span>
-                    <span class="item-title">${letter.title}</span>
-                </div>
-                <span class="item-badge ${badgeClass}">${badgeText}</span>
-            `;
-            listContainer.appendChild(item);
-        });
-    }
+  subtitle.textContent = 'A collection of letters, kept here in their own little chapters. 🕊️';
 
-    timelineCard.classList.remove('hidden');
-    setTimeout(() => {
-        timelineCard.classList.add('visible');
-    }, 50);
+  if (activeUserLetters.length === 0) {
+    listContainer.innerHTML = `<p class="timeline-subtitle" style="text-align:center; padding-top:20px;">Your timeline is currently peaceful and empty. Check back soon! 🕊️</p>`;
+  } else {
+    activeUserLetters
+    .sort((a, b) => b.number - a.number)
+    .forEach((letter) => {
+      const item = document.createElement("div");
+      item.className = "timeline-item";
+
+      // Trigger animation class first, then pass control to readLetter after delay
+      item.onclick = function () {
+        item.classList.add("envelope-opening");
+        setTimeout(() => {
+          readLetter(letter.originalIndex);
+        }, 380); // Perfectly timed with the CSS openFlapAnim duration
+      };
+
+      
+      item.innerHTML = `
+    <div class="item-meta">
+        <div class="item-number">#${String(letter.number).padStart(2, '0')}</div>
+
+        <div class="item-info">
+            <span class="item-date">${letter.date}</span>
+            <span class="item-title">${letter.title}</span>
+        </div>
+    </div>
+`;
+      listContainer.appendChild(item);
+    });
+  }
+
+  timelineCard.classList.remove("hidden");
+  setTimeout(() => {
+    timelineCard.classList.add("visible");
+  }, 50);
 }
 
 // ==========================================================================
 // Mount Individual Selected Narrative (With Gallery & WhatsApp Reply Support)
 // ==========================================================================
 function readLetter(originalIndex) {
-    const timelineCard = document.getElementById('selection-card');
-    const letterCard = document.getElementById('letter-card');
-    const targetLetter = selectedRecipientInfo.letters[originalIndex];
+  const timelineCard = document.getElementById("selection-card");
+  const letterCard = document.getElementById("letter-card");
+  const targetLetter = selectedRecipientInfo.letters[originalIndex];
 
-    localStorage.setItem(targetLetter.id, "true");
-    timelineCard.classList.add('fade-out');
+  timelineCard.classList.add("fade-out");
 
-    setTimeout(() => {
-        timelineCard.classList.add('hidden');
-        timelineCard.classList.remove('fade-out', 'visible');
+  setTimeout(() => {
+    timelineCard.classList.add("hidden");
+    timelineCard.classList.remove("fade-out", "visible");
 
-        document.getElementById('recipient-tag').innerText = selectedRecipientInfo.recipient;
-        document.getElementById('cc-tag').innerText = selectedRecipientInfo.cc;
-        document.getElementById('letter-content').innerHTML = targetLetter.content;
+    document.getElementById("recipient-tag").innerText =
+      selectedRecipientInfo.recipient;
+    document.getElementById("cc-tag").innerText = selectedRecipientInfo.cc;
+    document.getElementById("letter-content").innerHTML = `
+    <h1 class="letter-title">${targetLetter.title}</h1>
+    ${targetLetter.content}
+`;
 
-        // --- MULTI-MEDIA EMBED PARSING ---
-        const mediaBox = document.getElementById('media-attachment-box');
-        mediaBox.innerHTML = ""; 
-        mediaBox.className = "";  
+    // --- MULTI-MEDIA EMBED PARSING ---
+    const mediaBox = document.getElementById("media-attachment-box");
+    mediaBox.innerHTML = "";
+    mediaBox.className = "";
 
-        if (targetLetter.youtubeId) {
-            mediaBox.className = "media-box-active video-responsive-wrapper";
-            mediaBox.innerHTML = `<iframe src="https://www.youtube.com/embed/${targetLetter.youtubeId}" title="YouTube player" allowfullscreen></iframe>`;
-        } else if (targetLetter.spotifyUri) {
-            mediaBox.className = "media-box-active";
-            mediaBox.innerHTML = `<iframe src="https://open.spotify.com/embed/${targetLetter.spotifyUri}?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" class="spotify-frame-style"></iframe>`;
-        } else {
-            mediaBox.className = "media-box-hidden";
-        }
+    if (targetLetter.youtubeId) {
+      mediaBox.className = "media-box-active video-responsive-wrapper";
+      mediaBox.innerHTML = `<iframe src="https://www.youtube.com/embed/${targetLetter.youtubeId}" title="YouTube player" allowfullscreen></iframe>`;
+    } else if (targetLetter.spotifyUri) {
+      mediaBox.className = "media-box-active";
+      mediaBox.innerHTML = `<iframe src="https://open.spotify.com/embed/${targetLetter.spotifyUri}?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" class="spotify-frame-style"></iframe>`;
+    } else {
+      mediaBox.className = "media-box-hidden";
+    }
 
-        // --- UPGRADE #4: DYNAMIC POLAROID GALLERY ENGINE ---
-        const galleryBox = document.getElementById('gallery-hook');
-        galleryBox.innerHTML = ""; // Clear values from previous read logs
-        galleryBox.className = "";
+    // --- UPGRADE #4: DYNAMIC POLAROID GALLERY ENGINE ---
+    const galleryBox = document.getElementById("gallery-hook");
+    galleryBox.innerHTML = ""; // Clear values from previous read logs
+    galleryBox.className = "";
 
-        if (targetLetter.images && targetLetter.images.length > 0) {
-            galleryBox.className = "memory-grid";
-            
-            // Step through your data image paths and compile the grid string
-            let gridHTML = "";
-            targetLetter.images.forEach((imgSrc) => {
-                gridHTML += `
+    if (targetLetter.images && targetLetter.images.length > 0) {
+      galleryBox.className = "memory-grid";
+
+      // Step through your data image paths and compile the grid string
+      let gridHTML = "";
+      targetLetter.images.forEach((imgSrc) => {
+        gridHTML += `
                     <div class="polaroid-card">
                         <img src="${imgSrc}" alt="Memory Capture" loading="lazy">
                     </div>
                 `;
-            });
-            galleryBox.innerHTML = gridHTML;
-        }
+      });
+      galleryBox.innerHTML = gridHTML;
+    }
 
-        // --- UPGRADE: DYNAMIC WHATSAPP REPLY LINK GENERATOR ---
-        const replyBox = document.getElementById('reply-hook');
-        replyBox.innerHTML = ""; 
-        replyBox.className = "reply-container"; 
-        
-        // Construct an elegant pre-filled text template automatically
-        const baseMessage = `Hola Upsilon! I just finished reading "${targetLetter.title}" inside the secure mailbox... `;
-        
-        // URL-encode the string safely so spaces and emojis transfer perfectly to the app
-        const encodedMessage = encodeURIComponent(baseMessage);
-        
-        // Build the complete direct Click-to-Chat string
-        const whatsappURL = `https://wa.me/254795557525?text=${encodedMessage}`;
+    // --- UPGRADE: DYNAMIC WHATSAPP REPLY LINK GENERATOR ---
+    const replyBox = document.getElementById("reply-hook");
+    replyBox.innerHTML = "";
+    replyBox.className = "reply-container";
 
-        // Inject the styled premium responsive anchor link block
-        replyBox.innerHTML = `
+    // Construct an elegant pre-filled text template automatically
+    const baseMessage = `Hola Upsilon! I just finished reading "${targetLetter.title}" inside the secure mailbox... `;
+
+    // URL-encode the string safely so spaces and emojis transfer perfectly to the app
+    const encodedMessage = encodeURIComponent(baseMessage);
+
+    // Build the complete direct Click-to-Chat string
+    const whatsappURL = `https://wa.me/254795557525?text=${encodedMessage}`;
+
+    // Inject the styled premium responsive anchor link block
+    replyBox.innerHTML = `
             <a href="${whatsappURL}" target="_blank" rel="noopener noreferrer" class="whatsapp-reply-btn">
                 <span>Send a Reply via WhatsApp</span> 💬
             </a>
         `;
 
-        letterCard.classList.remove('hidden');
-        setTimeout(() => {
-            letterCard.classList.add('visible');
-        }, 50);
-    }, 400);
+    letterCard.classList.remove("hidden");
+    setTimeout(() => {
+      letterCard.classList.add("visible");
+    }, 50);
+  }, 400);
 }
 // ==========================================================================
 // Loop Backwards Controller Navigation
 // ==========================================================================
 function backToMailbox() {
-    const letterCard = document.getElementById('letter-card');
-    letterCard.classList.add('fade-out');
+  const letterCard = document.getElementById("letter-card");
+  letterCard.classList.add("fade-out");
 
-    setTimeout(() => {
-        letterCard.classList.add('hidden');
-        letterCard.classList.remove('fade-out', 'visible');
-        renderTimeline(); 
-    }, 400);
+  setTimeout(() => {
+    letterCard.classList.add("hidden");
+    letterCard.classList.remove("fade-out", "visible");
+    renderTimeline();
+  }, 400);
 }
 
 // ==========================================================================
 // Logout & Session Reset Controller
 // ==========================================================================
 function logoutVault() {
-    const gateCard = document.getElementById('gatekeeper-card');
-    const timelineCard = document.getElementById('selection-card');
-    const btnNode = document.getElementById('submit-btn');
+  const gateCard = document.getElementById("gatekeeper-card");
+  const timelineCard = document.getElementById("selection-card");
+  const btnNode = document.getElementById("submit-btn");
 
-    timelineCard.classList.add('fade-out');
+  timelineCard.classList.add("fade-out");
 
+  setTimeout(() => {
+    timelineCard.classList.add("hidden");
+    timelineCard.classList.remove("fade-out", "visible");
+
+    activeUserLetters = [];
+    selectedRecipientInfo = {};
+
+    document.getElementById("vault-form").reset();
+    btnNode.innerText = "Open Letter 💌";
+
+    gateCard.classList.remove("hidden");
     setTimeout(() => {
-        timelineCard.classList.add('hidden');
-        timelineCard.classList.remove('fade-out', 'visible');
-
-        activeUserLetters = [];
-        selectedRecipientInfo = {};
-
-        document.getElementById('vault-form').reset();
-        btnNode.innerText = "Open Letter 💌";
-
-        gateCard.classList.remove('hidden');
-        setTimeout(() => {
-            gateCard.classList.add('visible');
-        }, 50);
-    }, 400);
+      gateCard.classList.add("visible");
+    }, 50);
+  }, 400);
 }

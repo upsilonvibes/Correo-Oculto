@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solo Para Ti 🕊️</title>
-    <link rel="icon" href="https://fav.farm/💌">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="icon" href="https://fav.farm/💌" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="floating-particle" id="p1">🌸</div>
     <div class="floating-particle" id="p2">✨</div>
     <div class="floating-particle" id="p3">🌹</div>
@@ -17,59 +16,68 @@
     <div class="floating-particle" id="p6">✨</div>
 
     <div class="card-container" id="gatekeeper-card">
-        <h1 class="landing-title">Código de Amor 💖</h1>
-        <p class="landing-subtitle">A private digital vault. Enter your credentials to open your letter.</p>
-        
-        <form id="vault-form" onsubmit="unlockVault(event)">
-            <div class="input-group">
-                <input type="text" id="recipient-name" required autocomplete="off">
-                <label>Your Name</label>
-            </div>
-            
-            <div class="input-group">
-                <input type="password" id="secret-key" required autocomplete="off">
-                <label>Secret Access Key</label>
-            </div>
+      <h1 class="landing-title">Código de Amor 💖</h1>
+      <p class="landing-subtitle">
+        A private digital vault. Enter your credentials to open your letter.
+      </p>
 
-            <p class="error-message" id="gate-error"></p>
+      <form id="vault-form" onsubmit="unlockVault(event)">
+        <div class="input-group">
+          <input type="text" id="recipient-name" required autocomplete="off" />
+          <label>Your Name</label>
+        </div>
 
-            <button type="submit" class="unlock-btn" id="submit-btn">Unlock Letter 🔑</button>
-        </form>
+        <div class="input-group">
+          <input type="password" id="secret-key" required autocomplete="off" />
+          <label>Secret Access Key</label>
+        </div>
+
+        <p class="error-message" id="gate-error"></p>
+
+        <button type="submit" class="unlock-btn" id="submit-btn">
+          Unlock Letter 🔑
+        </button>
+      </form>
     </div>
 
     <!-- PHASE 2: The Timeline Mailbox (Letter Selection - New!) -->
     <div class="card-container hidden" id="selection-card">
-    <div class="mailbox-header">
+      <div class="mailbox-header">
         <h2 class="timeline-title">Your Secure Mailbox 🕊️</h2>
-        <button class="logout-btn" onclick="logoutVault()">Lock Mailbox 🔒</button>
+        <button class="logout-btn" onclick="logoutVault()">
+          Lock Mailbox 🔒
+        </button>
+      </div>
+      <p class="timeline-subtitle" id="mailbox-subtitle">
+        Select a manuscript from your digital timeline to read it.
+      </p>
+
+      <div class="timeline-list" id="timeline-list"></div>
     </div>
-    <p class="timeline-subtitle">Select a manuscript from your digital timeline to read it.</p>
-    
-    <div class="timeline-list" id="timeline-list">
-        </div>
-</div>
 
     <!-- PHASE 3: The Adaptive Letter Canvas (Reading Room) -->
     <div class="card-container hidden" id="letter-card">
-    <button class="back-btn" onclick="backToMailbox()">← Back to Mailbox</button>
-    
-    <div class="header-tags">
+      <button class="back-btn" onclick="backToMailbox()">
+        ← Back to Mailbox
+      </button>
+
+      <div class="header-tags">
         <span>De: Upsilon Vibes ✨</span>
         <span id="recipient-tag">Para: ... 🕊️</span>
+      </div>
+      <div class="cc-tag" id="cc-tag">CC: ... 🧩</div>
+
+      <hr class="divider" />
+
+      <div id="media-attachment-box"></div>
+
+      <div id="gallery-hook"></div>
+
+      <article class="letter-body" id="letter-content"></article>
+      <div id="reply-hook"></div>
     </div>
-    <div class="cc-tag" id="cc-tag">CC: ... 🧩</div>
-    
-    <hr class="divider">
-
-    <div id="media-attachment-box"></div>
-
-    <div id="gallery-hook"></div>
-
-    <article class="letter-body" id="letter-content"></article>
-    <div id="reply-hook"></div>
-</div>
 
     <!-- Core Script Engine -->
     <script src="router.js"></script>
-</body>
+  </body>
 </html>
