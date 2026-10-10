@@ -156,7 +156,32 @@ const vaultMatrix = {
 
         <p class="signature">Awaiting the verdict... 🕯️<br><br><strong>Upsilon Vibes</strong></p>
     `,
-        }
+        },
+        {
+  id: "emmah-vol2",
+  date: "Oct 10, 2026",
+  number: 3,
+  title: "A Confession My Heart Can No Longer Conceal 🕯️🥀",
+  content: `
+    <p>Let truth be revealed unto thee, for I can no longer conceal the peculiar stirring that hath taken root within my heart. 🕯️❤️</p>
+
+    <p>Whenever thou appearest before me, some strange and wondrous disturbance awakens my soul, as though the very heavens themselves conspire to draw mine eyes towards thee. ✨🌹</p>
+
+    <p>I have attempted to dismiss it as a mere admiration to bury it beneath the affairs of ordinary life, yet every effort hath proven futile. 📜💭</p>
+
+    <p>Thy presence lingereth within my thoughts long after thou hast departed. Thy countenance returneth to my mind when I least expect it. 🥀🌙</p>
+
+    <p>Even the simplest exchange between us possesseth a peculiar sweetness that I cannot rightly explain. 💌🕊️</p>
+
+    <p>By the heavens above, what enchantment hath befallen me? For I find myself captivated by thee in a manner most unexpected. ✨❤️</p>
+
+    <p>My reason commandeth restraint, yet my heart speaketh with a voice far more persistent. 🖋️💖</p>
+
+    <p>Therefore, let this confession stand without disguise or hesitation. 🕯️🌹</p>
+
+    <p class="signature">With sentiments sincerely confessed... 🥀🖋️<br><br><strong>Upsilon Vibes</strong> 🎩❤️</p>
+  `,
+},
       ],
     },
   },
